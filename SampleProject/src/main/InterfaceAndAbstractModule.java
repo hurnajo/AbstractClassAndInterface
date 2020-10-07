@@ -15,8 +15,8 @@ public class InterfaceAndAbstractModule implements ProjectInterface{
         int totalPcs = 0;
         System.out.println("-----Problem 1 ------");
         System.out.println("Here are the List of possible scenarios to get 100PCS of items and cost 100 Yuan");
-        for (int cockPiece = 1; cockPiece <= 20; cockPiece++) {
-            for (int henPiece = 1; henPiece <= 33; henPiece++) {
+        for (int cockPiece = 0; cockPiece <= 20; cockPiece++) {
+            for (int henPiece = 0; henPiece <= 33; henPiece++) {
                 int chickenPiece = 100 - cockPiece - henPiece;
                 totalCost = (cockPrice * cockPiece) + (henPrice * henPiece) + (chickenPiece / 3);
                 totalPcs = cockPiece + henPiece + chickenPiece;
